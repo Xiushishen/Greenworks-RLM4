@@ -57,7 +57,7 @@ Header files can be found in "/usr/include/eigen3"
 
 Please follow the steps below carefully.
 
-Download source code of **OpenCV 4.6.0**, **OpenCV_Contrib 4.6.0**, and **cv_bridge**. Also, put the OpenCV and OpenCV_Contrib source code into the specific folder mentioned before. 
+Download source code of **OpenCV 4.6.0** and **OpenCV_Contrib 4.6.0**. Also, put the OpenCV and OpenCV_Contrib source code into the specific folder mentioned before. 
 
 **Opencv 4.6.0**:
 
@@ -66,10 +66,6 @@ Download source code of **OpenCV 4.6.0**, **OpenCV_Contrib 4.6.0**, and **cv_bri
 **OpenCV_contrib**:
 
 (https://github.com/opencv/opencv_contrib/releases/tag/4.6.0)
-
-**cv_bridge**:
-
-(https://github.com/ros-perception/vision_opencv)
 
 Computing power for NVIDIA Orin:
 
@@ -122,7 +118,11 @@ jtop
 
 # if there is one line saying OpenCV: 4.6.0 with CUDA: YES, the OpenCV is successfully installed.
 ```
+## cv_bridge
 
+**cv_bridge**:
+
+(https://github.com/ros-perception/vision_opencv)
 
 
 
