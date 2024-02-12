@@ -359,6 +359,7 @@ comment:
 #include(/home/dji/opencv/build/OpenCVConfig.cmake)
 
 add:
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 include(/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake)
 
 # go to loop_fusion/CMakeLists.txt
@@ -366,7 +367,9 @@ comment:
 #include(/home/dji/opencv/build/OpenCVConfig.cmake)
 
 add:
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 include(/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake)
+
 catkin_make
 ```
 
