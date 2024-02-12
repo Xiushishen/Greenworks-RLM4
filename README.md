@@ -120,12 +120,17 @@ jtop
 ```
 ## cv_bridge
 
-**cv_bridge**:
+```
+git clone https://github.com/ros-perception/vision_opencv.git -b noetic
+# we only need teh cv_bridge folder
+cd cv_bridge
+gedit ./CMakeLists.txt
 
-(https://github.com/ros-perception/vision_opencv)
-
-
-
+mkdir build && cd build
+cmake ..
+make -j8
+sudo make install
+```
 
 # 2. Usage
 ## 2.1 Change the opencv path in the CMakeLists
