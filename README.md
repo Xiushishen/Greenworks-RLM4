@@ -531,7 +531,7 @@ ImageTopic: "/camera/color/image_raw"
 Data.custom_msg: 0
 # Initial extrinsic (usually provided by hand measurement or cad design)
 
-ExtrinsicMat: !!opencv-matrix
+ExtrinsicMat: !!opencv-matrix # Lidar -> camera
   rows: 4
   cols: 4
   dt: d
