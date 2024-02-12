@@ -72,7 +72,7 @@ cv_bridge:
 (https://github.com/ros-perception/vision_opencv)
 
 
-<img src="https://github.com/Xiushishen/Greenworks-RLM4/tree/main/support_files/cp.png" width = 70% height = 30% div align=middle />
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/tree/main/support_files/cp.png" width = 50% height = 30% div align=center />
 
 
 # 2. Usage
