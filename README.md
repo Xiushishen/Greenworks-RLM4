@@ -10,6 +10,9 @@ To make life easiesr, please consider add the following line into bash file.
 gedit ~/.bashrc
 source /opt/ros/noetic/setup.bash
 ```
+### Pangolin
+### Eigen3
+### OpenCV 
 ## 2. Usage
 ### 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  
