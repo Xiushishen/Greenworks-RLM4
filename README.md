@@ -57,6 +57,16 @@ Header files can be found in "/usr/include/eigen3"
 
 Please follow the steps below carefully.
 
+Delete the auto-installed OpenCV on Nvidia Orin:
+
+```
+dpkg -l | grep libopencv
+sudo apt-get remove libopencv*
+sudo apt-get autoremove
+sudo apt-get autoclean
+```
+If we don't delete other version OpenCV, we probably will get conflict and some reposities will fail to run.
+
 Download source code of **OpenCV 4.6.0** and **OpenCV_Contrib 4.6.0**. Also, put the OpenCV and OpenCV_Contrib source code into the specific folder mentioned before. 
 
 **Opencv 4.6.0**:
@@ -122,15 +132,19 @@ jtop
 
 ```
 git clone https://github.com/ros-perception/vision_opencv.git -b noetic
-# we only need teh cv_bridge folder
+# we only need the cv_bridge folder
 cd cv_bridge
 gedit ./CMakeLists.txt
+# add one line
+
 
 mkdir build && cd build
 cmake ..
 make -j8
 sudo make install
 ```
+
+
 
 # 2. Usage
 ## 2.1 Change the opencv path in the CMakeLists
