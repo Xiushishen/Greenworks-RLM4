@@ -398,7 +398,29 @@ Dataset for testing:
 (https://www.cvlibs.net/datasets/kitti/eval_odometry.php)
 
 ## livox_ros_driver
+
+Most of the time, this repo will only be used for compiling other packages if we use Livox HAP lidar.
+
 ## livox_ros_driver2
+
+Install and Build:
+
+```
+git clone https://github.com/Livox-SDK/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
+source /opt/ros/noetic/setup.sh
+./build.sh ROS1
+```
+
+How to run HAP Lidar:
+```
+ros2 launch livox_ros_driver2 rviz_HAP.launch
+ros2 launch livox_ros_driver2 msg_HAP.launch
+```
+See official documentation for reference:
+
+(https://github.com/Livox-SDK/livox_ros_driver2)
+
+
 ## FAST_LIO2
 ## livox_camera_calib
 ## R3LIVE
