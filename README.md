@@ -193,9 +193,23 @@ sudo make install
 ```
 ## Livox-SDK
 
+```
+git clone https://github.com/Livox-SDK/Livox-SDK.git
+cd Livox-SDK
+cd build && cmake ..
+make
+sudo make install
+```
 ## Livox-SDK2
 
-
+```
+git clone https://github.com/Livox-SDK/Livox-SDK2.git
+cd ./Livox-SDK2/
+mkdir build
+cd build
+cmake .. && make -j8
+sudo make install
+```
 # 2. Repositories
 
 ## ORB-SLAM3
