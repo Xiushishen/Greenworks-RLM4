@@ -15,12 +15,10 @@ sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
 sudo apt-get install liblapack-dev libsuitesparse-dev libgflags-dev libgoogle-glog-dev libgtest-dev libcxsparse3 -y
 sudo apt-get install libboost-all-dev
 sudo apt-get install libxkbcommon-devsudo apt-get install libeigen3-dev qtdeclarative5-dev qt5-qmake
-sudo apt-get install libqglviewer-dev-qt5 
-sudp apt-get install wayland-protocols
+sudo apt-get install libqglviewer-dev-qt5 wayland-protocols
 sudo apt-get install libudev-dev pkg-config libgtk-3-dev
-sudo apt-get install libusb-1.0-0-dev
-sudo apt-get install libglfw3-dev
-sudo apt-get install libssl-dev
+sudo apt-get install libusb-1.0-0-dev libssl-dev
+sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at 
 ```
 ## ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
@@ -245,11 +243,17 @@ Download the source code:
 ```
 mkdir build
 cd build
-cmake ../ -DCMAKE_BUILD_TYPE=Release -DBUILD_EXAMPLES=true
-sudo make uninstall
-make clean && make -j8
+cmake -D CMAKE_BUILD_TYPE=Release .. 
+make -j8
 sudo make install
 ```
+How to visualize and obtain parameters of T265:
+```
+realsense-viewer
+
+rs-enumerate-devices -c
+```
+
 # 2. Repositories
 
 ## ORB-SLAM3
@@ -261,6 +265,12 @@ sudo make install
 ## R3LIVE
 ## robot_pose_ekf
 ## realsense-ros
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+
+https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy
+
+
+
 ## imu_utils
 ## kalibr
 ## open-vins
