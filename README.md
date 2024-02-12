@@ -15,11 +15,19 @@ We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization
 
 ```
 # Dependencies:
-
 sudo apt-get install libglew-dev
 sudo apt-get install libpython2.7-dev
 sudo apt-get install libxkbcommon-dev
 sudp apt-get install wayland-protocols
+
+# Build and Install:
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin
+mkdir build
+cd build
+cmake ..
+make –j8
+sudo make install
 ```
 ## Eigen3
 ## OpenCV 
