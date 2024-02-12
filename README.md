@@ -234,6 +234,10 @@ sudo make install
 
 ## realsense-t265 SDK
 
+Please follow the link to install:
+
+(https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md)
+
 Download the source code:
 
 (https://github.com/IntelRealSense/librealsense/releases/tag/v2.50.0)
