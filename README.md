@@ -13,6 +13,7 @@ sudo apt-get install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswsc
 sudo apt-get install libdc1394-22-dev libraw1394-dev
 sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
 sudo apt-get install git
+sudo apt-get install liblapack-dev libsuitesparse-dev libgflags-dev libgoogle-glog-dev libgtest-dev libcxsparse3 -y
 
 ```
 ## ROS 1
