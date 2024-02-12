@@ -287,7 +287,7 @@ rs-enumerate-devices -c
 To better use ORBSLAM3 for robot mower software development, we are going to use a revised version for better intergration.
 
 ```
-cd ~/catkin_ws/src
+cd ~/orb_slam3_ws/src
 git clone https://github.com/thien94/orb_slam3_ros.git
 # add one line into the CMakeLists.txt
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
