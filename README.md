@@ -343,7 +343,11 @@ roslaunch realsense2_camera rs_t265.launch
 roslaunch orb_slam3_ros rs_t265_stereo_inertial.launch
 ```
 
+Please also check this repo for more information.
+(https://github.com/shanpenghui/ORB_SLAM3_Fixed#73-set-camera-intrinsic--extrinsic-parameters)
+
 ## VINS-FUSION-GPU
+
 ## livox_ros_driver
 ## livox_ros_driver2
 ## FAST_LIO2
