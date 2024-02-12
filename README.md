@@ -34,16 +34,18 @@ sudo make install
 ```
 # Install via command:
 sudo apt-get install libeigen3-dev (not recommended because it would be better if we install the specific version.)
-
+```
 # Instill via source:
 # Get source code from website:
+
 (https://gitlab.com/libeigen/eigen/-/releases)
+```
 mkdir build
 cd build
 cmake ..
 make -j8
 sudo make install
-
+```
 # Header files can be found in "/usr/include/eigen3"
 ```
 ## OpenCV 
