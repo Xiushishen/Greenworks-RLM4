@@ -11,6 +11,16 @@ gedit ~/.bashrc
 source /opt/ros/noetic/setup.bash
 ```
 ## Pangolin
+We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface.
+
+```
+# Dependencies:
+sudo apt-get install libglew-dev
+sudo apt-get install libpython2.7-dev
+sudo apt-get install libxkbcommon-dev
+sudp apt-get install wayland-protocols
+
+```
 ## Eigen3
 ## OpenCV 
 # 2. Usage
