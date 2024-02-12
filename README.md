@@ -107,13 +107,22 @@ sudo make install -j8
 Check if the CUDA-accelerated OpenCV is successfully installed:
 ```
 # Install jtop:
-
 sudo apt-get install python3-pip -y
 sudo -H pip3 install -U jetson-stats
 sudo systemctl restart jtop.service
+
 # reboot if needed
 reboot
 ```
+
+Open terminal:
+```
+jtop
+7 (go to INFO)
+
+# if there is one line saying OpenCV: 4.6.0 with CUDA: YES, the OpenCV is successfully installed.
+```
+
 
 
 
