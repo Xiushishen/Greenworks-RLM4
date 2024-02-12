@@ -1,8 +1,9 @@
 # Greenworks-RLM4
-# VINS-Fusion-gpu
-This repository is a version of VINS-Fusion with GPU acceleration. It can run on Nvidia TX2 in real-time. 
+This repository illustrates the steps needed to set up the environment on NVIDIA Orin for robotic mower development.
 ## 1. Prerequisites  
-The essential software environment is same as VINS-Fusion. Besides, it requires OpenCV cuda version.(Only test it on OpenCV 3.4.1).
+The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with OpenCV verison of 4.6.0. It should be easy to compile on other platforms.
+### ROS 1
+(http://wiki.ros.org/noetic/Installation/Ubuntu)
 ## 2. Usage
 ### 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  
