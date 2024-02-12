@@ -336,15 +336,18 @@ Acc.avg-axis.acc_w  -->  IMU.AccWalk
 ```
 Live stereo-inertial mode with Realsense T265
 
-    Modify the original rs_t265.launch to enable fisheye images and imu data (change unite_imu_method to linear_interpolation).
-    Run rs-enumerate-devices -c to get the calibration parameters and modify config/Stereo-Inertial/RealSense_T265.yaml accordingly. A detailed explaination can be found here.
-    Run:
+Modify the original rs_t265.launch to enable fisheye images and imu data (change unite_imu_method to linear_interpolation).
+
+Run rs-enumerate-devices -c to get the calibration parameters and modify config/Stereo-Inertial/RealSense_T265.yaml accordingly.
 
 # In one terminal:
+```
 roslaunch realsense2_camera rs_t265.launch
+```
 # In another terminal:
+```
 roslaunch orb_slam3_ros rs_t265_stereo_inertial.launch
-
+```
 
 ## VINS-FUSION-GPU
 ## livox_ros_driver
