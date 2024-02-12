@@ -68,6 +68,7 @@ OpenCV_contrib:
 (https://github.com/opencv/opencv_contrib/releases/tag/4.6.0)
 
 cv_bridge:
+
 (https://github.com/ros-perception/vision_opencv)
 
 
