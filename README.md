@@ -192,7 +192,7 @@ sudo make install
 ```
 How to use the cv_bridge:
 ```
-# set this line in your project's CMakeLists.txt file just after the ```project(xxxx)```
+# set this line in your project's CMakeLists.txt file just after the project(xxxx) syntax
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 ```
 
