@@ -294,6 +294,40 @@ set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 cd ../
 catkin_make
 ```
+Set config files (T265 Stereo-Inertial camera):
+```
+# According to T256 camera
+Intrinsic Params:
+PPX  -->  Camera.cx
+PPY  -->  Camera.cy
+Fx   -->  Camera.fx
+Fy   -->  Camera.fy
+Coeffs[0]  -->  Camera.k1
+Coeffs[1]  -->  Camera.k2
+Coeffs[2]  -->  Camera.k3
+Coeffs[3]  -->  Camera.k4
+
+Extrinsic Params:
+Rotation_Matrix (Extrinsic from "Gyro" To "Fisheye 1")  --> Tbc.data.R
+Rotation_Matrix[0][0]  -->  Tbc.data[0][0]
+Rotation_Matrix[0][1]  -->  Tbc.data[0][1]
+Rotation_Matrix[0][2]  -->  Tbc.data[0][2]
+Rotation_Matrix[1][0]  -->  Tbc.data[1][0]
+Rotation_Matrix[1][1]  -->  Tbc.data[1][1]
+Rotation_Matrix[1][2]  -->  Tbc.data[1][2]
+Rotation_Matrix[2][0]  -->  Tbc.data[2][0]
+Rotation_Matrix[2][1]  -->  Tbc.data[2][1]
+Rotation_Matrix[2][2]  -->  Tbc.data[2][2]
+
+Translation Vector (Extrinsic from "Gyro" To "Fisheye 1")  --> Tbc.data.t
+Translation_Vector[0]  -->  Tbc.data[0][3]
+Translation_Vector[1]  -->  Tbc.data[1][3]
+Translation_Vector[2]  -->  Tbc.data[2][3]
+```
+
+
+
+
 
 
 ## VINS-FUSION-GPU
