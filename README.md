@@ -378,9 +378,15 @@ If your other application do not require much GPU resources, I recommanded you t
 use_gpu: 1
 use_gpu_acc_flow: 1
 ```
-According to my test, on TX2 if you set this two parameters to 1 at the same time, the GPU usage is about 20%.
+According to my test, on Nvidia Orin if you set this two parameters to 1 at the same time, the GPU usage is about 20%.
 
+Dataset for testing:
 
+**EuRoC:**
+(https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
+
+**KITTI:**
+(https://www.cvlibs.net/datasets/kitti/eval_odometry.php)
 
 ## livox_ros_driver
 ## livox_ros_driver2
