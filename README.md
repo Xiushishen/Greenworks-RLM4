@@ -403,7 +403,7 @@ Most of the time, this repo will only be used for compiling other packages if we
 
 ## livox_ros_driver2
 
-Install and Build:
+Install and build:
 
 ```
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
@@ -422,6 +422,66 @@ See official documentation for reference:
 
 
 ## FAST_LIO2
+
+Install and build:
+
+```
+cd ~/$A_ROS_DIR$/src
+git clone https://github.com/hku-mars/FAST_LIO.git
+cd FAST_LIO
+git submodule update --init
+cd ../..
+catkin_make
+source devel/setup.bash
+```
+How to run:
+
+```
+cd ~/$FAST_LIO_ROS_DIR$
+source devel/setup.bash
+roslaunch fast_lio mapping_HAP.launch
+```
+Below is the config file for HAP Lidar:
+```
+common:
+    lid_topic:  "/livox/lidar"
+    imu_topic:  "/livox/imu"
+    time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
+    time_offset_lidar_to_imu: 0.0 # Time offset between lidar and IMU calibrated by other algorithms, e.g. LI-Init (can be found in README).
+                                  # This param will take effect no matter what time_sync_en is. So if the time offset is not known exactly, please set as 0.0
+
+preprocess:
+    lidar_type: 1                # 1 for Livox serials LiDAR, 2 for Velodyne LiDAR, 3 for ouster LiDAR, 
+    scan_line: 128
+    blind: 0.1
+
+mapping:
+    acc_cov: 0.1
+    gyr_cov: 0.1
+    b_acc_cov: 0.0001
+    b_gyr_cov: 0.0001
+    fov_degree:    120
+    det_range:     150.0
+    extrinsic_est_en:  true      # true: enable the online estimation of IMU-LiDAR extrinsic
+    extrinsic_T: [ 0, 0, 0 ]
+    extrinsic_R: [ 1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1]
+
+publish:
+    path_en:  false
+    scan_publish_en:  true       # false: close all the point cloud output
+    dense_publish_en: true       # false: low down the points number in a global-frame point clouds scan.
+    scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+
+pcd_save:
+    pcd_save_en: true
+    interval: -1                 # how many LiDAR frames saved in each pcd file; 
+                                 # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
+```
+
+
+
 ## livox_camera_calib
 ## R3LIVE
 ## robot_pose_ekf
