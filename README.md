@@ -31,11 +31,13 @@ sudo make install
 ```
 ## Eigen3
 
+Install via command:
+
 ```
-# Install via command:
 sudo apt-get install libeigen3-dev (not recommended because it would be better if we install the specific version.)
 ```
-# Instill via source:
+
+Install via source:
 
 Get source code from website:
 
