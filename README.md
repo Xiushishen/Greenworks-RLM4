@@ -70,7 +70,33 @@ cmake ..
 make
 sudo make install
 ```
+## Sophus
 
+Download the source code from the link below:
+
+(https://github.com/strasdat/Sophus/releases/tag/1.22.10)
+
+Most of the time, we need to compile fmt library to get it work. Below is about how to do this:
+
+```
+git clone https://github.com/fmtlib/fmt.git
+cd fmt
+mkdir build 
+cd build
+cmake ..
+make
+sudo make install
+```
+
+Let's compile Sophus:
+```
+cd Sophus
+mkdir build 
+cd build
+cmake ..
+make
+sudo make install
+```
 ## GTSAM
 
 Download the source code:
