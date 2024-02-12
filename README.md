@@ -183,14 +183,20 @@ git clone https://github.com/ros-perception/vision_opencv.git -b noetic
 # we only need the cv_bridge folder
 cd cv_bridge
 gedit ./CMakeLists.txt
-# add one line
-
-
+# include OpenCV cmake file
+include("/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake")
 mkdir build && cd build
 cmake ..
 make -j8
 sudo make install
 ```
+How to use the cv_bridge:
+```
+# set this line in your project's CMakeLists.txt file just after the ```project(xxxx)```
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+```
+
+
 ## Livox-SDK
 
 ```
@@ -210,6 +216,15 @@ cd build
 cmake .. && make -j8
 sudo make install
 ```
+
+## realsense-t265
+
+Download the source code:
+
+(https://github.com/IntelRealSense/librealsense/releases/tag/v2.50.0)
+
+
+
 # 2. Repositories
 
 ## ORB-SLAM3
