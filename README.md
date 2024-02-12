@@ -76,6 +76,34 @@ Computing power for NVIDIA Orin:
 <img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/cp.png" width = 70% height = 50% div align=center />
 
 
+```
+cd ~/path_to_folder/opencv-4.6.0/
+mkdir build && cd build
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+        -D CMAKE_INSTALL_PREFIX=/usr/local/ \
+        -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.6.0/modules \
+        -D WITH_CUDA=ON \
+        -D CUDA_ARCH_BIN=8.7 \
+        -D CUDA_ARCH_PTX="" \
+        -D ENABLE_FAST_MATH=ON \
+        -D CUDA_FAST_MATH=ON \
+        -D WITH_CUBLAS=ON \
+        -D WITH_LIBV4L=ON \
+        -D WITH_GSTREAMER=ON \
+        -D WITH_GSTREAMER_0_10=OFF \
+        -D WITH_QT=ON \
+        -D WITH_OPENGL=ON \
+        -D CUDA_NVCC_FLAGS="--expt-relaxed-constexpr" \
+        -D WITH_TBB=ON \
+        ..
+
+# CUDA_ARCCH_BIN=8.7 (the amount of computing power for NVIDIA Orin)
+# CMAKE_INSTALL_PREFIX=/usr/local/ (path to installation)
+# OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.6.0/modules (path to additional module)
+```
+
+
 # 2. Usage
 ## 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  
