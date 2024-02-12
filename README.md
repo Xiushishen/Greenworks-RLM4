@@ -64,6 +64,17 @@ sudo make install
 ```
 ## GTSAM
 
+Download the source code:
+
+https://github.com/borglab/gtsam/releases/tag/4.1.0
+
+```
+mkdir build
+cd build
+cmake ..
+make -j8
+sudo make install
+```
 ## Eigen3 3.3.7
 
 Install via command:
