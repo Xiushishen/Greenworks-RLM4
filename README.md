@@ -4,6 +4,7 @@ This repository illustrates the steps needed to set up the environment on NVIDIA
 The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with the OpenCV verison of 4.6.0.
 ### ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
+
 To make life easiesr, please consider add the following line into bash file.
 ```
 gedit ~/.bashrc
