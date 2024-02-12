@@ -29,6 +29,12 @@ cmake ..
 make –j8
 sudo make install
 ```
+## PCL
+```
+sudo apt update
+sudo apt install libpcl-dev
+```
+
 ## Eigen3
 
 Install via command:
