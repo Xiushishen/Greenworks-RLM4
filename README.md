@@ -17,7 +17,10 @@ sudo apt-get install liblapack-dev libsuitesparse-dev libgflags-dev libgoogle-gl
 sudo apt-get install libboost-all-dev
 sudo apt-get install libxkbcommon-dev
 sudp apt-get install wayland-protocols
-
+sudo apt-get install libudev-dev pkg-config libgtk-3-dev
+sudo apt-get install libusb-1.0-0-dev pkg-config
+sudo apt-get install libglfw3-dev
+sudo apt-get install libssl-dev
 ```
 ## ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
@@ -217,14 +220,20 @@ cmake .. && make -j8
 sudo make install
 ```
 
-## realsense-t265
+## realsense-t265 SDK
 
 Download the source code:
 
 (https://github.com/IntelRealSense/librealsense/releases/tag/v2.50.0)
 
-
-
+```
+mkdir build
+cd build
+cmake ../ -DCMAKE_BUILD_TYPE=Release -DBUILD_EXAMPLES=true
+sudo make uninstall
+make clean && make -j8
+sudo make install
+```
 # 2. Repositories
 
 ## ORB-SLAM3
@@ -235,6 +244,12 @@ Download the source code:
 ## livox_camera_calib
 ## R3LIVE
 ## robot_pose_ekf
+## realsense-ros
+## imu_utils
+## kalibr
+## open-vins
+## 
+
 
 
 
