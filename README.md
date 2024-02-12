@@ -1,5 +1,5 @@
 # Greenworks-RLM4
-This repository illustrates the steps needed to set up the environment on NVIDIA Orin NX for robotic mower development.
+This repository illustrates the steps needed to set up the environment on NVIDIA Orin for robotic mower development.
 # 1. Prerequisites  
 The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with the OpenCV verison of 4.6.0. It is strongly recommended to put all the **Dependencies** and **SDKs** into one specific folder to mak the environment neat.
 ## ROS 1
@@ -71,8 +71,9 @@ cv_bridge:
 
 (https://github.com/ros-perception/vision_opencv)
 
+Computing power for NVIDIA Orin:
 
-<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/cp.png" width = 50% height = 30% div align=center />
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/cp.png" width = 70% height = 50% div align=center />
 
 
 # 2. Usage
