@@ -1,9 +1,15 @@
 # Greenworks-RLM4
 This repository illustrates the steps needed to set up the environment on NVIDIA Orin for robotic mower development.
 ## 1. Prerequisites  
-The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with OpenCV verison of 4.6.0. It should be easy to compile on other platforms.
+The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with the OpenCV verison of 4.6.0.
 ### ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
+To make life easiesr, please consider add the following line into bash file.
+```
+gedit ~/.bashrc
+source /opt/ros/noetic/setup.bash
+
+```
 ## 2. Usage
 ### 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  
