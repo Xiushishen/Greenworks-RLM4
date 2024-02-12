@@ -380,6 +380,15 @@ use_gpu_acc_flow: 1
 ```
 According to my test, on Nvidia Orin if you set this two parameters to 1 at the same time, the GPU usage is about 20%.
 
+How to run vins:
+```
+roslaunch vins vins_rviz.launch
+rosrun vins vins_node src/VINS-Fusion-gpu/config/realsense_t265/stereo_imu.yaml
+(optional) rosrun loop_fusion loop_fusion_node src/VINS-Fusion-gpu/config/realsense_t265/stereo_imu.yaml
+(optional only if you want to fuse gps) rosrun global_fusion global_fusion_node 
+rosbag play YOUR_DATASET_FOLDER/data.bag
+```
+
 Dataset for testing:
 
 **EuRoC:**
