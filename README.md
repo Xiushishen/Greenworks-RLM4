@@ -50,9 +50,21 @@ sudo apt update
 sudo apt install libpcl-dev
 ```
 ## ceres-solver
+
+Download the source code:
+
+(https://github.com/ceres-solver/ceres-solver/releases/tag/1.14.0)
+
+```
+mkdir build
+cd build
+cmake ..
+make -j8
+sudo make install
+```
 ## GTSAM
 
-## Eigen3
+## Eigen3 3.3.7
 
 Install via command:
 
@@ -64,7 +76,7 @@ Install via source:
 
 Get source code from website:
 
-(https://gitlab.com/libeigen/eigen/-/releases)
+(https://gitlab.com/libeigen/eigen/-/releases/3.3.7)
 
 ```
 mkdir build
