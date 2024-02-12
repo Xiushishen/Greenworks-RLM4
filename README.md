@@ -14,6 +14,7 @@ sudo apt-get install libdc1394-22-dev libraw1394-dev
 sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
 sudo apt-get install git
 sudo apt-get install liblapack-dev libsuitesparse-dev libgflags-dev libgoogle-glog-dev libgtest-dev libcxsparse3 -y
+sudo apt-get install libboost-all-dev
 
 ```
 ## ROS 1
@@ -48,6 +49,8 @@ sudo make install
 sudo apt update
 sudo apt install libpcl-dev
 ```
+## ceres-solver
+## GTSAM
 
 ## Eigen3
 
@@ -178,10 +181,10 @@ sudo make install
 ## VINS-FUSION-GPU
 ## livox_ros_driver
 ## livox_ros_driver2
-## FAST_LIO
+## FAST_LIO2
 ## livox_camera_calib
 ## R3LIVE
-
+## robot_pose_ekf
 
 
 
