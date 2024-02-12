@@ -483,6 +483,46 @@ pcd_save:
 
 
 ## livox_camera_calib
+
+Install and build:
+
+```
+cd ~/lidar_cam_calib_ws/src
+git clone https://github.com/hku-mars/livox_camera_calib.git
+cd ../
+catkin_make
+source ~/lidar_cam_calib_ws/devel/setup.bash
+```
+
+How to run it:
+
+```
+roslaunch livox_camera_calib calib.launch
+```
+Below is the calib.yaml:
+```
+# Data path. adjust them!
+common:
+    image_file: "/home/nvidia/robotics/lidar_cam_calib_ws/src/livox_camera_calib/data/7.jpg"
+    pcd_file: "/home/nvidia/robotics/lidar_cam_calib_ws/src/livox_camera_calib/data/7.pcd"
+    result_file: "/home/nvidia/robotics/lidar_cam_balib_ws/src/livox_camera_calib/result/extrinsic.txt"
+
+# Camera Parameters. Adjust them!
+camera:
+    camera_matrix: [701.417236328125, 0.0, 639.5635986328125,
+                0.0,     701.0556030273438,  362.57061767578125,
+                0.0,     0.0,      1.0     ] 
+    dist_coeffs: [-0.047434888780117035, -0.012185392901301384, 0.000674429873470217, -0.0011172627564519644, 0.000000] 
+
+# Calibration Parameters.!
+calib:
+    calib_config_file: "/home/nvidia/robotics/lidar_cam_calib_ws/src/livox_camera_calib/config/config_outdoor.yaml"
+    use_rough_calib: true # set true if your initial_extrinsic is bad
+```
+
+
+
+
 ## R3LIVE
 ## robot_pose_ekf
 ## realsense-ros
