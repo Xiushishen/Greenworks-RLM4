@@ -1,5 +1,5 @@
 # Greenworks-RLM4
-This repository illustrates the steps needed to set up the environment on NVIDIA Orin for robotic mower development.
+This repository illustrates the steps needed to set up the environment on NVIDIA Orin NX for robotic mower development.
 # 1. Prerequisites  
 The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with the OpenCV verison of 4.6.0. It is strongly recommended to put all the **Dependencies** and **SDKs** into one specific folder to mak the environment neat.
 ## ROS 1
@@ -53,7 +53,25 @@ sudo make install
 
 Header files can be found in "/usr/include/eigen3"
 
-## OpenCV 
+## OpenCV 4.6.0 with CUDA 
+
+Please follow the steps below carefully.
+
+Download source code of **Opencv 4.6.0**, **OpenCV_Contrib 4.6.0**, and **cv_bridge**.
+
+Opencv 4.6.0:
+
+(https://github.com/opencv/opencv/releases/tag/4.6.0)
+
+OpenCV_contrib:
+
+(https://github.com/opencv/opencv_contrib/releases/tag/4.6.0)
+
+cv_bridge:
+(https://github.com/ros-perception/vision_opencv)
+
+
+
 # 2. Usage
 ## 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  
