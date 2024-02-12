@@ -2,6 +2,19 @@
 This repository illustrates the steps needed to set up the environment on NVIDIA Orin for robotic mower development.
 # 1. Prerequisites  
 The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with the OpenCV verison of 4.6.0. It is strongly recommended to put all the **Dependencies** and **SDKs** into one specific folder to mak the environment neat.
+
+## Basic libraries
+
+```
+sudo apt-get install libglew-dev
+sudo apt-get install cmake
+sudo apt-get install libpython2.7-dev
+sudo apt-get install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswscale-dev libavdevice-dev
+sudo apt-get install libdc1394-22-dev libraw1394-dev
+sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
+sudo apt-get install git
+
+```
 ## ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
 
@@ -63,6 +76,12 @@ Header files can be found in "/usr/include/eigen3"
 
 Please follow the steps below carefully.
 
+sudo apt-get install libglew-dev
+sudo apt-get install cmake
+sudo apt-get install libpython2.7-dev
+sudo apt-get install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswscale-dev libavdevice-dev
+sudo apt-get install libdc1394-22-dev libraw1394-dev
+sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
 Delete the auto-installed OpenCV on Nvidia Orin:
 
 ```
@@ -152,7 +171,34 @@ sudo make install
 
 
 
-# 2. Usage
+# 2. Repositories
+
+## ORB-SLAM3
+## VINS-FUSION-GPU
+## livox_ros_driver
+## livox_ros_driver2
+## FAST_LIO
+## livox_camera_calib
+## R3LIVE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  
 In /loop_fusion/CmakeLists.txt, change Line 19 to your path.
