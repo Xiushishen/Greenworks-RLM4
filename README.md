@@ -72,6 +72,8 @@ cv_bridge:
 (https://github.com/ros-perception/vision_opencv)
 
 
+<img src="https://github.com/Greenworks-RLM4/support_files/cp.png" width = 55% height = 55% div align=left />
+
 
 # 2. Usage
 ## 2.1 Change the opencv path in the CMakeLists
