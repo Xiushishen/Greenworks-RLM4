@@ -59,15 +59,15 @@ Please follow the steps below carefully.
 
 Download source code of **OpenCV 4.6.0**, **OpenCV_Contrib 4.6.0**, and **cv_bridge**. Also, put the OpenCV and OpenCV_Contrib source code into the specific folder mentioned before. 
 
-Opencv 4.6.0:
+**Opencv 4.6.0**:
 
 (https://github.com/opencv/opencv/releases/tag/4.6.0)
 
-OpenCV_contrib:
+**OpenCV_contrib**:
 
 (https://github.com/opencv/opencv_contrib/releases/tag/4.6.0)
 
-cv_bridge:
+**cv_bridge**:
 
 (https://github.com/ros-perception/vision_opencv)
 
