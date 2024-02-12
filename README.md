@@ -236,7 +236,7 @@ sudo make install
 
 Please follow the link to install:
 
-(https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md)
+(https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)
 
 Download the source code:
 
