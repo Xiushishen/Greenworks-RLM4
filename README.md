@@ -50,8 +50,9 @@ cmake ..
 make -j8
 sudo make install
 ```
-# Header files can be found in "/usr/include/eigen3"
-```
+
+Header files can be found in "/usr/include/eigen3"
+
 ## OpenCV 
 # 2. Usage
 ## 2.1 Change the opencv path in the CMakeLists
