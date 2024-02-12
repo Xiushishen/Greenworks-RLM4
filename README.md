@@ -101,7 +101,21 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 # CUDA_ARCCH_BIN=8.7 (the amount of computing power for NVIDIA Orin)
 # CMAKE_INSTALL_PREFIX=/usr/local/ (path to installation)
 # OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.6.0/modules (path to additional module)
+
+sudo make install -j8
 ```
+Check if the CUDA-accelerated OpenCV is successfully installed:
+```
+# Install jtop:
+
+sudo apt-get install python3-pip -y
+sudo -H pip3 install -U jetson-stats
+sudo systemctl restart jtop.service
+# reboot if needed
+reboot
+```
+
+
 
 
 # 2. Usage
