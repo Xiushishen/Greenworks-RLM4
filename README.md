@@ -15,6 +15,8 @@ sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
 sudo apt-get install git
 sudo apt-get install liblapack-dev libsuitesparse-dev libgflags-dev libgoogle-glog-dev libgtest-dev libcxsparse3 -y
 sudo apt-get install libboost-all-dev
+sudo apt-get install libxkbcommon-dev
+sudp apt-get install wayland-protocols
 
 ```
 ## ROS 1
@@ -29,12 +31,6 @@ source /opt/ros/noetic/setup.bash
 We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface.
 
 ```
-# Dependencies:
-sudo apt-get install libglew-dev
-sudo apt-get install libpython2.7-dev
-sudo apt-get install libxkbcommon-dev
-sudp apt-get install wayland-protocols
-
 # Build and Install:
 git clone https://github.com/stevenlovegrove/Pangolin.git
 cd Pangolin
