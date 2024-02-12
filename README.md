@@ -348,6 +348,23 @@ Please also check this repo for more information.
 
 ## VINS-FUSION-GPU
 
+```
+mkdir -p ~/vins_gpu_ws/src/vins-fusion-gpu/src/
+cd ~/vins_gpu_ws/src/vins-fusion-gpu/src/
+git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
+# go to vins_estimator/CMakeLists.txt
+comment out:
+#include(/home/dji/opencv/build/OpenCVConfig.cmake)
+add:
+include(/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake)
+# go to loop_fusion/CMakeLists.txt
+comment out:
+#include(/home/dji/opencv/build/OpenCVConfig.cmake)
+add:
+include(/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake)
+```
+
+
 ## livox_ros_driver
 ## livox_ros_driver2
 ## FAST_LIO2
