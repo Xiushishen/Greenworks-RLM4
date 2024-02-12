@@ -5,20 +5,20 @@ The essential software environment is based on Ubuntu 20.04. We have tested all 
 
 ## Basic libraries
 
-```
+``` 
+sudo apt-get install gcc g++ vim cmake git
 sudo apt-get install libglew-dev
-sudo apt-get install cmake
 sudo apt-get install libpython2.7-dev
 sudo apt-get install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswscale-dev libavdevice-dev
 sudo apt-get install libdc1394-22-dev libraw1394-dev
 sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
-sudo apt-get install git
 sudo apt-get install liblapack-dev libsuitesparse-dev libgflags-dev libgoogle-glog-dev libgtest-dev libcxsparse3 -y
 sudo apt-get install libboost-all-dev
-sudo apt-get install libxkbcommon-dev
+sudo apt-get install libxkbcommon-devsudo apt-get install libeigen3-dev qtdeclarative5-dev qt5-qmake
+sudo apt-get install libqglviewer-dev-qt5 
 sudp apt-get install wayland-protocols
 sudo apt-get install libudev-dev pkg-config libgtk-3-dev
-sudo apt-get install libusb-1.0-0-dev pkg-config
+sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install libglfw3-dev
 sudo apt-get install libssl-dev
 ```
@@ -35,7 +35,7 @@ We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization
 
 ```
 # Build and Install:
-git clone https://github.com/stevenlovegrove/Pangolin.git
+git clone https://github.com/stevenlovegrove/Pangolin.git (version 0.9/0.6)
 cd Pangolin
 mkdir build
 cd build
@@ -46,7 +46,7 @@ sudo make install
 ## PCL
 ```
 sudo apt update
-sudo apt install libpcl-dev
+sudo apt-get install libpcl-dev pcl-tools
 ```
 ## ceres-solver
 
@@ -61,6 +61,18 @@ cmake ..
 make -j8
 sudo make install
 ```
+## G2O
+
+```
+git clone https://github.com/RainerKuemmerle/g2o.git
+cd g2o
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
+
 ## GTSAM
 
 Download the source code:
