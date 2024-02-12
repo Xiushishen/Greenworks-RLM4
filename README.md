@@ -372,6 +372,14 @@ include(/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake)
 
 catkin_make
 ```
+If your other application do not require much GPU resources, I recommanded you to set
+
+```
+use_gpu: 1
+use_gpu_acc_flow: 1
+```
+According to my test, on TX2 if you set this two parameters to 1 at the same time, the GPU usage is about 20%.
+
 
 
 ## livox_ros_driver
