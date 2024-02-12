@@ -283,6 +283,14 @@ rs-enumerate-devices -c
 # 2. Repositories
 
 ## ORB-SLAM3
+
+To better use ORBSLAM3 for robot mower software development, we are going to use a revised version for better intergration.
+
+```
+
+```
+
+
 ## VINS-FUSION-GPU
 ## livox_ros_driver
 ## livox_ros_driver2
