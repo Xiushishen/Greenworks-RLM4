@@ -481,6 +481,14 @@ pcd_save:
 ```
 ## R3LIVE
 ## robot_pose_ekf
+
+Detailed information:
+
+(https://blog.csdn.net/shoufei403/article/details/102655696)
+
+
+
+
 ## open-vins
 ## realsense-ros
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
