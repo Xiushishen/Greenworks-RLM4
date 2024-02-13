@@ -23,7 +23,7 @@ sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at
 ## ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
 
-To make life easiesr, please consider add the following line into bash file.
+To make life easier, please consider add the following line into bash file.
 ```
 gedit ~/.bashrc
 source /opt/ros/noetic/setup.bash
@@ -479,9 +479,15 @@ pcd_save:
     interval: -1                 # how many LiDAR frames saved in each pcd file; 
                                  # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
 ```
+## R3LIVE
+## robot_pose_ekf
+## open-vins
+## realsense-ros
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 
+https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy
 
-
+# 3. Calibration
 ## livox_camera_calib
 
 Install and build:
@@ -560,21 +566,15 @@ Edge.max_dis_threshold: 0.06
 Color.dense: 1
 Color.intensity_threshold: 10
 ```
-
 The ExtrinsicMat is the extrinsic matrix between camera and Lidar, which is needed to modify depending on your sensor layout.
-
-## R3LIVE
-## robot_pose_ekf
-## realsense-ros
-set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
-
-https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy
-
-
-
 ## imu_utils
+
+
+
 ## kalibr
-## open-vins
+
+
+
 ## 
 
 
