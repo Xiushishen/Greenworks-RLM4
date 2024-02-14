@@ -598,7 +598,7 @@ conda activate yolov7
 
 # Install system packages required by PyTorch
 sudo apt-get -y update
-sudo apt-get -y python3-pip libopenblas-dev
+sudo apt-get -y install autoconf bc build-essential g++-8 gcc-8 clang-8 lld-8 gettext-base gfortran-8 iputils-ping libbz2-dev libc++-dev libcgal-dev libffi-dev libfreetype6-dev libhdf5-dev libjpeg-dev liblzma-dev libncurses5-dev libncursesw5-dev libpng-dev libreadline-dev libssl-dev libsqlite3-dev libxml2-dev libxslt-dev locales moreutils openssl python-openssl rsync scons python3-pip libopenblas-dev;
 ```
 Before installing Pytorch, please check the version of your Jetpack.
 ```
@@ -650,21 +650,68 @@ Attention: Python 3.8 does not support numpy version that is over 1.24, so the s
 ```
 pip install numpy==1.19.5
 ```
+How to verify if Pytorch is successfully installed:
 
+```
+# From the terminal, run:
+python
+# Import PyTorch:
+>>> import torch
+```
+If PyTorch was installed correctly, this command should execute without error. 
 
+For more reference, please check the link below.
 
-(https://github.com/WongKinYiu/yolov7)
+https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html
 
+Now you can install torchvision:
 
+Check your corresponding torchvision for the Pytorch installed. For me, the corresponding torchvision is **0.16.0**.
 
+https://blog.csdn.net/shiwanghualuo/article/details/122860521
 
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev 
+git clone --branch v0.16.0 https://github.com/pytorch/vision torchvision
+cd torchvision
+export BUILD_VERSION=0.16.0
+# the step below might take longer time because we build from source.
+python3 setup.py install --user
+```
+If there are no errors, torchvision is successfully installed. Repeat the previous verification step to check if everything is good.
+```
+python
+>>> import torch
+>>> import torchvision
+```
+If we miss any libraries, we can just pip install it until there are no errors.
 
+Finally, we can install and compile YOLOv7:
+```
+git clone https://github.com/WongKinYiu/yolov7
+```
+```
+vim requirements.txt
+# comment out the two lines.
+torch>=1.7.0,!=1.12.0
+torchvision>=0.8.1,!=0.13.0
+```
+**If you do not comment out the two lines above, the torch will be CPU version instead of GPU version.**
+```
+pip install -r requirements.txt
+```
+Download the weight from github, and you can test:
+```
+python detect.py --weights weights/yolov7.pt --source inference/images 
+```
 
+References:
 
+https://blog.csdn.net/lanyan90/article/details/131439255
 
-
-
-
+https://blog.csdn.net/lanyan90/article/details/131411549?spm=1001.2014.3001.5502
 
 -----------------------------------------------------
 
