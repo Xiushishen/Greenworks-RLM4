@@ -516,11 +516,10 @@ cd ~/workspace/open_vins_ws/src/
 git clone https://github.com/rpng/open_vins/
 cd ..
 catkin_catkin # ROS1
-
+```
+```
 # Because we have made the **cv_bridge** from source code, we have to add the dependencies into CMakeLists.txt
-```
 
-```
 # In ov_core, add the line below to its CMakeLists.txt.
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 
@@ -531,9 +530,6 @@ set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 # Additional Evaluation Requirements
 sudo apt-get install python3-dev python3-matplotlib python3-numpy python3-psutil python3-tk # for python3 systems
 ```
-
-
-
 
 
 ## realsense-ros
