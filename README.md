@@ -627,6 +627,10 @@ Description-md5: ad1462289bdbc54909ae109d1d32c0a8
 ```
 The link below you can check the version correspondence. For me, I have the Jetpack version of **Version: 5.1.2-b104**, I should be using JetPack 5 PyTorch v2.1.0.
 
+
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/jetpackversion.png" width = 70% height = 50% div align=center />
+
+
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 
