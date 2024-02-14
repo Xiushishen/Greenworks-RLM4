@@ -625,7 +625,7 @@ MD5sum: 6be522b5542ab2af5dcf62837b34a5f0
 Description: NVIDIA Jetpack Meta Package
 Description-md5: ad1462289bdbc54909ae109d1d32c0a8
 ```
-
+https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 
 (https://github.com/WongKinYiu/yolov7)
