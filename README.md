@@ -354,7 +354,7 @@ cd ~/vins_gpu_ws/src/vins-fusion-gpu/src/
 git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
 
 # go to vins_estimator/CMakeLists.txt
-comment:
+comment:Next, install PyTorch with the following steps: 
 
 #include(/home/dji/opencv/build/OpenCVConfig.cmake)
 
@@ -627,9 +627,25 @@ Description-md5: ad1462289bdbc54909ae109d1d32c0a8
 ```
 The link below you can check the version correspondence. For me, I have the Jetpack version of **Version: 5.1.2-b104**, I should be using JetPack 5 PyTorch v2.1.0.
 
+https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 <img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/jetpackversion.png" width = 70% height = 50% div align=center />
 
+Now, you can install PyTorch with the following steps:
+```
+
+export TORCH_INSTALL=https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION/pytorch/$PYT_VERSION
+
+Where:
+
+**JP_VERSION**
+    The major and minor version of JetPack you are using, such as 461 for JetPack 4.6.1 or 50 for JetPack 5.0. 
+**PYT_VERSION**
+    The released version of the PyTorch wheel.
+
+
+
+```
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
