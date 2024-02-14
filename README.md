@@ -633,21 +633,24 @@ https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 Now, you can install PyTorch with the following steps:
 ```
-
 export TORCH_INSTALL=https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION/pytorch/$PYT_VERSION
-
 Where:
-
 **JP_VERSION**
     The major and minor version of JetPack you are using, such as 461 for JetPack 4.6.1 or 50 for JetPack 5.0. 
 **PYT_VERSION**
     The released version of the PyTorch wheel.
 
+For example:
 
-
+export TORCH_INSTALL=https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+python3 -m pip install --upgrade pip; python3 -m pip install numpy==’1.26.1’ python3 -m pip install --no-cache $TORCH_INSTALL
 ```
 
-https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
+Attention: Python 3.8 does not support numpy version that is over 1.24, so the step above might fail. Please consider doing below:
+```
+pip install numpy==1.19.5
+```
+
 
 
 (https://github.com/WongKinYiu/yolov7)
