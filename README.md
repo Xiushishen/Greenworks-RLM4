@@ -492,7 +492,7 @@ Detailed information:
 
 (https://blog.csdn.net/shoufei403/article/details/102655696)
 
-## open-vins
+## OpenVINS
 
 The [document](https://docs.openvins.com/) made by Dr. Huang's lab is really comprehensive and precise. It provides all the knowledge about how to compile and understand the codes.
 
