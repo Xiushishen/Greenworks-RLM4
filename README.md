@@ -474,6 +474,9 @@ pcd_save:
                                  # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
 ```
 ## R3LIVE
+
+R3LIVE is not supported on NVIDIA AGX Orin.
+
 ## robot_pose_ekf
 
 EKF based robotic mower localization via IMU, GPS, odom and VIO (VINS-FUSION).
@@ -486,16 +489,14 @@ Here is how to solve it:
 ```
 sudo apt-get install liborocos-bfl-dev
 ```
-
-
 Detailed information:
 
 (https://blog.csdn.net/shoufei403/article/details/102655696)
 
 
-
-
 ## open-vins
+
+
 ## realsense-ros
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 
