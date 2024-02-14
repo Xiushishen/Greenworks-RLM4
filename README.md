@@ -476,6 +476,18 @@ pcd_save:
 ## R3LIVE
 ## robot_pose_ekf
 
+EKF based robotic mower localization via IMU, GPS, odom and VIO (VINS-FUSION).
+
+If this is your first time installing this package, you probably counter this error especially on Ubuntu 20.04.
+```
+No package 'orocos-bfl' found
+```
+Here is how to solve it:
+```
+sudo apt-get install liborocos-bfl-dev
+```
+
+
 Detailed information:
 
 (https://blog.csdn.net/shoufei403/article/details/102655696)
