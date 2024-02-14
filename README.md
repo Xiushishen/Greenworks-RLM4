@@ -672,13 +672,7 @@ Color.intensity_threshold: 10
 The ExtrinsicMat is the extrinsic matrix between camera and Lidar, which is needed to modify depending on your sensor layout.
 ## imu_utils
 
-
-
 ## kalibr
-
-
-
-## 
 
 # 4. Percpetion
 
