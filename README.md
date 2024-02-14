@@ -18,7 +18,7 @@ sudo apt-get install libxkbcommon-devsudo apt-get install libeigen3-dev qtdeclar
 sudo apt-get install libqglviewer-dev-qt5 wayland-protocols
 sudo apt-get install libudev-dev pkg-config libgtk-3-dev
 sudo apt-get install libusb-1.0-0-dev libssl-dev
-sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at 
+sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at
 ```
 ## ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
@@ -138,12 +138,6 @@ Header files can be found in "/usr/include/eigen3"
 
 Please follow the steps below carefully.
 
-sudo apt-get install libglew-dev
-sudo apt-get install cmake
-sudo apt-get install libpython2.7-dev
-sudo apt-get install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswscale-dev libavdevice-dev
-sudo apt-get install libdc1394-22-dev libraw1394-dev
-sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libopenexr-dev
 Delete the auto-installed OpenCV on Nvidia Orin:
 
 ```
