@@ -506,16 +506,20 @@ mkdir src && cd src
 git clone https://github.com/IntelRealSense/realsense-ros.git
 cd realsense2_camera
 gedit CMakeLists.txt
+
 # add one line before **find_package**.
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+
 # go back to the worksapce and compile the package
 catkin_make
 ```
+
 How to run:
 ```
 source devel/setup.bash
 roslaunch realsense2_camera rs_t265.launch 
-``
+```
+
 Here is how to revise the rs_t265.launch based on RealSense T265 camera:
 ```
 <!--
@@ -585,7 +589,6 @@ https://github.com/IntelRealSense/librealsense/blob/master/third-party/libtm/lib
     </include>
   </group>
 </launch>
-
 ```
 # 3. Calibration
 ## livox_camera_calib
