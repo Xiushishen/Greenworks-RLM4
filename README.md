@@ -494,6 +494,13 @@ Detailed information:
 
 ## open-vins
 
+The [document](https://docs.openvins.com/) made by Dr. Huang's lab is really comprehensive and precise. It provides all the information about how to compile and understand the codes.
+
+
+
+
+
+
 ## realsense-ros
 
 Build and compile:
