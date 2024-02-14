@@ -494,8 +494,43 @@ Detailed information:
 
 ## open-vins
 
-The [document](https://docs.openvins.com/) made by Dr. Huang's lab is really comprehensive and precise. It provides all the information about how to compile and understand the codes.
+The [document](https://docs.openvins.com/) made by Dr. Huang's lab is really comprehensive and precise. It provides all the knowledge about how to compile and understand the codes.
 
+However, we would like to illustrate more details based on the NVIDIA AGX Orin.
+
+Build and compile on ROS 1 Noetic:
+```
+# Prerequisite:
+sudo apt-get install libboost-all-dev
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo apt-get update
+export ROS1_DISTRO=noetic # kinetic=16.04, melodic=18.04, noetic=20.04
+sudo apt-get install ros-$ROS1_DISTRO-desktop-full
+sudo apt-get install python3-catkin-tools python3-osrf-pycommon # ubuntu 20.04
+```
+```
+# Clone and compile:
+mkdir -p ~/workspace/open_vins_ws/src/
+cd ~/workspace/open_vins_ws/src/
+git clone https://github.com/rpng/open_vins/
+cd ..
+catkin_catkin # ROS1
+
+# Because we have made the **cv_bridge** from source code, we have to add the dependencies into CMakeLists.txt
+```
+
+```
+# In ov_core, add the line below to its CMakeLists.txt.
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+
+# In ov_msckf, add the line below to its CMakeLists.txt.
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+```
+```
+# Additional Evaluation Requirements
+sudo apt-get install python3-dev python3-matplotlib python3-numpy python3-psutil python3-tk # for python3 systems
+```
 
 
 
