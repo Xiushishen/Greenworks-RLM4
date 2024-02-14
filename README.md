@@ -600,11 +600,11 @@ conda activate yolov7
 sudo apt-get -y update
 sudo apt-get -y python3-pip libopenblas-dev
 ```
+Before installing Pytorch, please check the version of your Jetpack.
 ```
-# Before installing Pytorch, please check the version of your Jetpack.
-
 sudo apt-cache show nvidia-jetpack
 ```
+Below is the detailed information about your Jetpack. You need to find the corresponding Pytorch version based on Jetpack version.
 ```
 nvidia@nvidia-desktop:~$ sudo apt-cache show nvidia-jetpack
 [sudo] password for nvidia: 
@@ -624,9 +624,6 @@ SHA1: 78c7d9e02490f96f8fbd5a091c8bef280b03ae84
 MD5sum: 6be522b5542ab2af5dcf62837b34a5f0
 Description: NVIDIA Jetpack Meta Package
 Description-md5: ad1462289bdbc54909ae109d1d32c0a8
-```
-
-  
 ```
 
 
