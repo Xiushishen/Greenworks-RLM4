@@ -414,7 +414,6 @@ See official documentation for reference:
 
 (https://github.com/Livox-SDK/livox_ros_driver2)
 
-
 ## FAST_LIO2
 
 Install and build:
@@ -493,9 +492,7 @@ Detailed information:
 
 (https://blog.csdn.net/shoufei403/article/details/102655696)
 
-
 ## open-vins
-
 
 ## realsense-ros
 
