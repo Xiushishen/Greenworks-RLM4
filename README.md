@@ -838,6 +838,12 @@ https://blog.csdn.net/lanyan90/article/details/131439255
 https://blog.csdn.net/lanyan90/article/details/131411549?spm=1001.2014.3001.5502
 
 -----------------------------------------------------
+# 5. CANbus and ROS 1 Connection
+
+https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/developer_kit_layout.html
+
+
+
 
 ## 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  
