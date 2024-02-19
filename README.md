@@ -532,6 +532,11 @@ sudo apt-get install python3-dev python3-matplotlib python3-numpy python3-psutil
 ```
 ## Field2Cover 
 
+Please follow the offical [document](https://fields2cover.github.io/index.html) to install and compile the project.
+
+
+
+
 
 https://blog.csdn.net/qq_35238245/article/details/127334695
 
