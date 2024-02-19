@@ -18,7 +18,7 @@ sudo apt-get install libxkbcommon-devsudo apt-get install libeigen3-dev qtdeclar
 sudo apt-get install libqglviewer-dev-qt5 wayland-protocols
 sudo apt-get install libudev-dev pkg-config libgtk-3-dev
 sudo apt-get install libusb-1.0-0-dev libssl-dev
-sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at
+sudo apt-get install libglfw3-dev libgl1-mesa-dev at
 ```
 ## ROS 1
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
@@ -341,26 +341,28 @@ Please also check this repo for more information.
 (https://github.com/shanpenghui/ORB_SLAM3_Fixed#73-set-camera-intrinsic--extrinsic-parameters)
 
 ## VINS-FUSION-GPU
+If you are going to use OpenCV 4.x, you might encounter problems related deprecated outdated APIs. Please check [this](https://blog.csdn.net/m0_52457734/article/details/125343557) to solve them.
 
 ```
 mkdir -p ~/vins_gpu_ws/src/vins-fusion-gpu/src/
 cd ~/vins_gpu_ws/src/vins-fusion-gpu/src/
 git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
 
-# go to vins_estimator/CMakeLists.txt
-comment:Next, install PyTorch with the following steps: 
+# Go to vins_estimator/CMakeLists.txt
 
+Comment:
 #include(/home/dji/opencv/build/OpenCVConfig.cmake)
 
-add:
+Add:
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 include(/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake)
 
-# go to loop_fusion/CMakeLists.txt
-comment:
+# Go to loop_fusion/CMakeLists.txt
+
+Aomment:
 #include(/home/dji/opencv/build/OpenCVConfig.cmake)
 
-add:
+Add:
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 include(/home/nvidia/ThirdParty/opencv-4.6.0/build/OpenCVConfig.cmake)
 
