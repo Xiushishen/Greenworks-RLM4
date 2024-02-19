@@ -48,12 +48,10 @@ sudo apt-get install libpcl-dev pcl-tools
 ```
 ## ceres-solver
 
-Download the source code:
-
-(https://github.com/ceres-solver/ceres-solver/releases/tag/1.14.0)
+Download the [source code](https://github.com/ceres-solver/ceres-solver/releases/tag/1.14.0) from offical website.
 
 ```
-# Install and compile:
+# Build and install:
 mkdir build
 cd build
 cmake ..
@@ -63,7 +61,7 @@ sudo make install
 ## G2O
 
 ```
-# Install and compile:
+# Build and install:
 git clone https://github.com/RainerKuemmerle/g2o.git
 cd g2o
 mkdir build
@@ -81,7 +79,7 @@ Download the source code from the link below:
 Most of the time, we need to compile fmt library to get it work. Below is about how to do this:
 
 ```
-# Install and compile:
+# Build and install:
 git clone https://github.com/fmtlib/fmt.git
 cd fmt
 mkdir build 
@@ -93,7 +91,7 @@ sudo make install
 
 Let's compile Sophus:
 ```
-# Install and compile:
+# Build and install:
 cd Sophus
 mkdir build 
 cd build
@@ -103,12 +101,10 @@ sudo make install
 ```
 ## GTSAM
 
-Download the source code:
-
-https://github.com/borglab/gtsam/releases/tag/4.1.0
+Download the [source code](https://github.com/borglab/gtsam/releases/tag/4.1.0) from the offical webiste.
 
 ```
-# Install and compile:
+# Build and install:
 mkdir build
 cd build
 cmake ..
@@ -117,20 +113,18 @@ sudo make install
 ```
 ## Eigen3 3.3.7
 
-Install via command:
+Install from command:
 
 ```
 sudo apt-get install libeigen3-dev (not recommended because it would be better if we install the specific version.)
 ```
 
-Install via source:
+Install from source:
 
-Get source code from website:
-
-(https://gitlab.com/libeigen/eigen/-/releases/3.3.7)
+Get [source code](https://gitlab.com/libeigen/eigen/-/releases/3.3.7) from website.
 
 ```
-# Install and compile:
+# Build and install:
 mkdir build
 cd build
 cmake ..
@@ -158,11 +152,11 @@ Download source code of **OpenCV 4.6.0** and **OpenCV_Contrib 4.6.0**. Also, put
 
 **Opencv 4.6.0**:
 
-(https://github.com/opencv/opencv/releases/tag/4.6.0)
+https://github.com/opencv/opencv/releases/tag/4.6.0
 
 **OpenCV_contrib**:
 
-(https://github.com/opencv/opencv_contrib/releases/tag/4.6.0)
+https://github.com/opencv/opencv_contrib/releases/tag/4.6.0
 
 Computing power for NVIDIA Orin:
 
@@ -218,8 +212,9 @@ jtop
 ## CV_Bridge
 
 ```
-# Install and compile:
+# Build and install:
 git clone https://github.com/ros-perception/vision_opencv.git -b noetic
+
 # we only need the cv_bridge folder
 cd cv_bridge
 gedit ./CMakeLists.txt
@@ -239,7 +234,7 @@ set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 ## Livox-SDK
 
 ```
-# Install and compile:
+# Build and install:
 git clone https://github.com/Livox-SDK/Livox-SDK.git
 cd Livox-SDK
 cd build && cmake ..
@@ -249,7 +244,7 @@ sudo make install
 ## Livox-SDK2
 
 ```
-# Install and compile:
+# Build and install:
 git clone https://github.com/Livox-SDK/Livox-SDK2.git
 cd ./Livox-SDK2/
 mkdir build
@@ -260,16 +255,12 @@ sudo make install
 
 ## realsense-t265 SDK
 
-Please follow the link to install:
+Please follow the [link](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md) to install.
 
-(https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)
-
-Download the source code:
-
-(https://github.com/IntelRealSense/librealsense/releases/tag/v2.50.0)
+Download the [source code](https://github.com/IntelRealSense/librealsense/releases/tag/v2.50.0) from offical website.
 
 ```
-# Install and compile:
+# Build and install:
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=Release .. 
