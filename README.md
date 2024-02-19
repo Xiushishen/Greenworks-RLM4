@@ -413,9 +413,7 @@ How to run HAP Lidar:
 ros2 launch livox_ros_driver2 rviz_HAP.launch
 ros2 launch livox_ros_driver2 msg_HAP.launch
 ```
-See official documentation for reference:
-
-(https://github.com/Livox-SDK/livox_ros_driver2)
+See official [documentation](https://github.com/Livox-SDK/livox_ros_driver2) for reference.
 
 ## FAST_LIO2
 
@@ -535,8 +533,26 @@ sudo apt-get install python3-dev python3-matplotlib python3-numpy python3-psutil
 ```
 ## Field2Cover 
 
-Please follow the offical [document](https://fields2cover.github.io/index.html) to install and compile the project.
+Please follow the offical [document](https://fields2cover.github.io/index.html) for more details about the coverage planning package.
 
+```
+# Build and install:
+git clone https://github.com/Fields2Cover/Fields2Cover src/fields2cover
+git clone https://github.com/Fields2Cover/fields2cover_ros src/fields2cover_ros
+rosdep install -r --ignore-src --from-paths .
+
+If using ROS 1:
+catkin_make_isolated
+
+If using ROS 2:
+colcon build
+```
+We have encountered some errors or problems during catkin_make_isolated. Fortunately, we have provided several solutions to these errors.
+
+if **rviz_plugins/AerialMapDisplay’ fail to load**:
+```
+sudo apt-get install ros-noetic-rviz-satellite
+```
 
 
 
