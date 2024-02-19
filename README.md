@@ -20,7 +20,7 @@ sudo apt-get install libudev-dev pkg-config libgtk-3-dev
 sudo apt-get install libusb-1.0-0-dev libssl-dev
 sudo apt-get install libglfw3-dev libgl1-mesa-dev at
 ```
-## ROS 1
+## ROS Noetic
 (http://wiki.ros.org/noetic/Installation/Ubuntu)
 
 To make life easier, please consider add the following line into bash file.
@@ -209,7 +209,7 @@ jtop
 
 # if there is one line saying OpenCV: 4.6.0 with CUDA: YES, the OpenCV is successfully installed.
 ```
-## cv_bridge
+## CV_Bridge
 
 ```
 git clone https://github.com/ros-perception/vision_opencv.git -b noetic
@@ -228,7 +228,6 @@ How to use the cv_bridge:
 # set this line in your project's CMakeLists.txt file just after the project(xxxx) syntax
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 ```
-
 
 ## Livox-SDK
 
@@ -344,6 +343,8 @@ Please also check this repo for more information.
 If you are going to use OpenCV 4.x, you might encounter problems related deprecated outdated APIs. Please check [this](https://blog.csdn.net/m0_52457734/article/details/125343557) to solve them.
 
 ```
+# Build and compile：
+
 mkdir -p ~/vins_gpu_ws/src/vins-fusion-gpu/src/
 cd ~/vins_gpu_ws/src/vins-fusion-gpu/src/
 git clone https://github.com/pjrambo/VINS-Fusion-gpu.git
@@ -376,7 +377,7 @@ use_gpu_acc_flow: 1
 ```
 According to my test, on Nvidia Orin if you set this two parameters to 1 at the same time, the GPU usage is about 20%.
 
-How to run vins:
+How to run vins_fusion:
 ```
 roslaunch vins vins_rviz.launch
 rosrun vins vins_node src/VINS-Fusion-gpu/config/realsense_t265/stereo_imu.yaml
