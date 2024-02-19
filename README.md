@@ -32,7 +32,7 @@ source /opt/ros/noetic/setup.bash
 We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface.
 
 ```
-# Build and Install:
+# Install and compile:
 git clone https://github.com/stevenlovegrove/Pangolin.git (version 0.9/0.6)
 cd Pangolin
 mkdir build
@@ -53,6 +53,7 @@ Download the source code:
 (https://github.com/ceres-solver/ceres-solver/releases/tag/1.14.0)
 
 ```
+# Install and compile:
 mkdir build
 cd build
 cmake ..
@@ -62,6 +63,7 @@ sudo make install
 ## G2O
 
 ```
+# Install and compile:
 git clone https://github.com/RainerKuemmerle/g2o.git
 cd g2o
 mkdir build
@@ -79,6 +81,7 @@ Download the source code from the link below:
 Most of the time, we need to compile fmt library to get it work. Below is about how to do this:
 
 ```
+# Install and compile:
 git clone https://github.com/fmtlib/fmt.git
 cd fmt
 mkdir build 
@@ -90,6 +93,7 @@ sudo make install
 
 Let's compile Sophus:
 ```
+# Install and compile:
 cd Sophus
 mkdir build 
 cd build
@@ -104,6 +108,7 @@ Download the source code:
 https://github.com/borglab/gtsam/releases/tag/4.1.0
 
 ```
+# Install and compile:
 mkdir build
 cd build
 cmake ..
@@ -125,6 +130,7 @@ Get source code from website:
 (https://gitlab.com/libeigen/eigen/-/releases/3.3.7)
 
 ```
+# Install and compile:
 mkdir build
 cd build
 cmake ..
@@ -212,6 +218,7 @@ jtop
 ## CV_Bridge
 
 ```
+# Install and compile:
 git clone https://github.com/ros-perception/vision_opencv.git -b noetic
 # we only need the cv_bridge folder
 cd cv_bridge
@@ -232,6 +239,7 @@ set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 ## Livox-SDK
 
 ```
+# Install and compile:
 git clone https://github.com/Livox-SDK/Livox-SDK.git
 cd Livox-SDK
 cd build && cmake ..
@@ -241,6 +249,7 @@ sudo make install
 ## Livox-SDK2
 
 ```
+# Install and compile:
 git clone https://github.com/Livox-SDK/Livox-SDK2.git
 cd ./Livox-SDK2/
 mkdir build
@@ -260,6 +269,7 @@ Download the source code:
 (https://github.com/IntelRealSense/librealsense/releases/tag/v2.50.0)
 
 ```
+# Install and compile:
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=Release .. 
