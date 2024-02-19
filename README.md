@@ -20,8 +20,9 @@ sudo apt-get install libudev-dev pkg-config libgtk-3-dev
 sudo apt-get install libusb-1.0-0-dev libssl-dev
 sudo apt-get install libglfw3-dev libgl1-mesa-dev at
 ```
-## ROS Noetic
-(http://wiki.ros.org/noetic/Installation/Ubuntu)
+## ROS 1 Noetic
+
+Follow the [link](http://wiki.ros.org/noetic/Installation/Ubuntu) to install and compile ROS 1 Noetic on you Ubuntu 20.04.
 
 To make life easier, please consider add the following line into bash file.
 ```
@@ -72,9 +73,7 @@ sudo make install
 ```
 ## Sophus
 
-Download the source code from the link below:
-
-(https://github.com/strasdat/Sophus/releases/tag/1.22.10)
+Download the source code from the [link](https://github.com/strasdat/Sophus/releases/tag/1.22.10).
 
 Most of the time, we need to compile fmt library to get it work. Below is about how to do this:
 
