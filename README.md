@@ -530,7 +530,10 @@ set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
 # Additional Evaluation Requirements
 sudo apt-get install python3-dev python3-matplotlib python3-numpy python3-psutil python3-tk # for python3 systems
 ```
+## Field2Cover 
 
+
+https://blog.csdn.net/qq_35238245/article/details/127334695
 
 ## realsense-ros
 
