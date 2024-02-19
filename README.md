@@ -547,17 +547,47 @@ catkin_make_isolated
 If using ROS 2:
 colcon build
 ```
-We have encountered some errors or problems during catkin_make_isolated. Fortunately, we have provided several solutions to these errors.
+We have encountered some errors or problems during roslaunch. Fortunately, we have provided several solutions to these errors.
 
 if **rviz_plugins/AerialMapDisplay’ fail to load**:
 ```
 sudo apt-get install ros-noetic-rviz-satellite
 ```
+```
+# If you have such errors, it is probably related to the version of PROJ library.
+  
+ERROR 1: PROJ: proj_create_from_database: SQLite error on SELECT name, type, coordinate_system_auth_name, coordinate_system_code, datum_auth_name, datum_code, area_of_use_auth_name, area_of_use_code, text_definition, deprecated FROM geodetic_crs WHERE auth_name = ? AND code = ?: no such column: area_of_use_auth_name
+ERROR 1: PROJ: proj_create_from_database: SQLite error on SELECT name, type, coordinate_system_auth_name, coordinate_system_code, datum_auth_name, datum_code, area_of_use_auth_name, area_of_use_code, text_definition, deprecated FROM geodetic_crs WHERE auth_name = ? AND code = ?: no such column: area_of_use_auth_name
+ERROR 1: PROJ: proj_create_from_database: SQLite error on SELECT name, coordinate_system_auth_name, coordinate_system_code, geodetic_crs_auth_name, geodetic_crs_code, conversion_auth_name, conversion_code, area_of_use_auth_name, area_of_use_code, text_definition, deprecated FROM projected_crs WHERE auth_name = ? AND code = ?: no such column: area_of_use_auth_name
+ERROR 1: PROJ: proj_create: unrecognized format / unknown name
+ERROR 6: Cannot find coordinate operations from `' to `'
+```
+How to solve it:
+```
+# Please check the current version or PROJ. Packages named like libproj-dev, proj-bin, proj-data are related to PROJ.
+dpkg -l | grep proj
 
+ii  libapache-pom-java                         18-1                                  all          Maven metadata for all Apache Software projects
+ii  libcommons-parent-java                     43-1                                  all          Maven metadata for Apache Commons project
+ii  libfprint-2-2:arm64                        1:1.90.2+tod1-0ubuntu1~20.04.10       arm64        async fingerprint library of fprint project, shared libraries
+ii  libproj-dev:arm64                          6.3.1-1                               arm64        Cartographic projection library (development files)
+ii  libproj15:arm64                            6.3.1-1                               arm64        Cartographic projection library
+ii  libwebrtc-audio-processing1:arm64          0.3.1-0ubuntu3                        arm64        AudioProcessing module from the WebRTC project.
+ii  proj-bin                                   6.3.1-1                               arm64        Cartographic projection library (tools)
+ii  proj-data                                  6.3.1-1                               all          Cartographic projection filter and library (datum package)
+ii  python3-incremental                        16.10.1-3.2                           all          Library for versioning Python projects.
 
+The compilable version should be 6.3.1-1. If you have the version proj-data which is not 6.3.1-1, please use the lines below to delete it and install the right one.
+sudo apt-get remove --purge proj-data
 
-
-https://blog.csdn.net/qq_35238245/article/details/127334695
+# check the available version if you want.
+apt-cache policy proj-data
+sudo apt-get install proj-data=6.3.1-1
+```
+Now, you should be good to go. 
+```
+roslaunch fields2cover_ros view_field.launch
+```
 
 ## realsense-ros
 
