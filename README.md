@@ -394,6 +394,21 @@ Dataset for testing:
 **KITTI:**
 (https://www.cvlibs.net/datasets/kitti/eval_odometry.php)
 
+## 超核IMU ROS Driver
+
+```
+# Build and run:
+catkin_make
+source devel/setup.bash
+ roslaunch imu_launch imu_msg.launch
+```
+
+Insufficient serial port permissions can be solved by:
+```
+sudo usermod -a -G dialout $USER
+reboot
+```
+
 ## livox_ros_driver
 
 Most of the time, this repo will only be used for compiling other packages if we use Livox HAP lidar.
