@@ -400,7 +400,7 @@ Dataset for testing:
 # Build and run:
 catkin_make
 source devel/setup.bash
- roslaunch imu_launch imu_msg.launch
+roslaunch imu_launch imu_msg.launch
 ```
 
 Insufficient serial port permissions can be solved by:
