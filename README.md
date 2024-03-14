@@ -59,7 +59,7 @@ cmake ..
 make -j8
 sudo make install
 ```
-## G2O
+## g2o
 
 ```
 # Build and install:
@@ -110,7 +110,7 @@ cmake ..
 make -j8
 sudo make install
 ```
-## Eigen3 3.3.7
+## Eigen 3.3.7
 
 Install from command:
 
