@@ -910,8 +910,7 @@ https://blog.csdn.net/lanyan90/article/details/131439255
 https://blog.csdn.net/lanyan90/article/details/131411549?spm=1001.2014.3001.5502
 
 -----------------------------------------------------
-# 5. CANbus and ROS 1 Connection
+# 5. CANbus and ROS Connection
+The software for CANbus and ROS communication can be found in this repo. It subscribes the /cmd_vel message and output the RPMs for both rear wheels. Meanwhile, it receives the CANbus message outputed from both rear wheels and converts them to ROS message of odometry.
 
 https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/developer_kit_layout.html
-
-CAN ROS connection needs to be done as soon as possible. The interface has been completed but we need to start testing.
