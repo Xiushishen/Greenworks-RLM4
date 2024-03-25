@@ -839,7 +839,9 @@ Where:
 For example:
 
 export TORCH_INSTALL=https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
-python3 -m pip install --upgrade pip; python3 -m pip install numpy==’1.26.1’ python3 -m pip install --no-cache $TORCH_INSTALL
+python3 -m pip install --upgrade pip;
+python3 -m pip install numpy==1.26.1
+python3 -m pip install --no-cache $TORCH_INSTALL
 ```
 
 Attention: Python 3.8 does not support numpy version that is over 1.24, so the step above might fail. Please consider doing below:
