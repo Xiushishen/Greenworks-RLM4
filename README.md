@@ -252,7 +252,7 @@ cmake .. && make -j8
 sudo make install
 ```
 
-## realsense-t265 SDK
+## RealSense T265 SDK
 
 Please follow the [link](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md) to install.
 
