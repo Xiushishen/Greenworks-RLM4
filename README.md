@@ -907,7 +907,10 @@ python detect.py --weights weights/yolov7.pt --source inference/images
 ```
 ### Train your own model:
 
-To train your model with robust dataset, you can try using the [software](https://www.makesense.ai/) to mark the images.
+1. To train your model with robust dataset, you can try using the [software](https://www.makesense.ai/) to mark the images.
+
+2. Divide the dataset into training set, testing set, and validation set with a ratio of 0.96 : 0.02 : 0.02.
+
 
 References:
 
