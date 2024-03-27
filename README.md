@@ -932,18 +932,17 @@ GND: Pin 39 / 30
 
 VCC: Pin 17
 
-
 NVIDIA recommends the [WaveShare SN65HVD230 CAN board](https://www.amazon.com/SN65HVD230-CAN-Board-Communication-Development/dp/B00KM6XMXO/ref=asc_df_B00KM6XMXO/?tag=hyprod-20&linkCode=df0&hvadid=319955522114&hvpos=&hvnetw=g&hvrand=5262066500605912549&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1026076&hvtargid=pla-644638418146&psc=1&mcid=50ab433395023d048fc639fac28b9abf&gclid=CjwKCAjwh4-wBhB3EiwAeJsppPYc8R-u8CA_QxcSyxF63JcCLxxZUwuhfxV0l7Kx5SpDmqPauSvuvxoCduwQAvD_BwE) for development systems. Your choice of transceiver for production devices depends on your application’s requirements.
 
 Make the following connections from the transceiver to the Jetson carrier board:
+Transceiver Rx to Jetson CAN_RX
 
-    Transceiver Rx to Jetson CAN_RX
+Transceiver Tx to Jetson CAN_TX
 
-    Transceiver Tx to Jetson CAN_TX
+Transceiver VCC to Jetson 3.3V pin
 
-    Transceiver VCC to Jetson 3.3V pin
+Transceiver GND to Jetson GND pin
 
-    Transceiver GND to Jetson GND pin
 
 ```
 
