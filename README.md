@@ -389,10 +389,10 @@ rosbag play YOUR_DATASET_FOLDER/data.bag
 Dataset for testing:
 
 **EuRoC:**
-(https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
+[EuRoc Datasets](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
 
 **KITTI:**
-(https://www.cvlibs.net/datasets/kitti/eval_odometry.php)
+[KITTI Datasets](https://www.cvlibs.net/datasets/kitti/eval_odometry.php)
 
 ## 超核IMU ROS Driver
 
@@ -911,6 +911,8 @@ python detect.py --weights weights/yolov7.pt --source inference/images
 
 2. Divide the dataset into training set, testing set, and validation set with a ratio of 0.96 : 0.02 : 0.02.
 
+3. Put the individual subdataset into one folder with one images and labels associated with it.
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/dataset.png" width = 70% height = 50% div align=center />
 
 References:
 
