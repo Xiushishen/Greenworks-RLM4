@@ -907,6 +907,8 @@ python detect.py --weights weights/yolov7.pt --source inference/images
 ```
 ### Train your own model:
 
+To train your model with robust dataset, you can try using the [software](https://www.makesense.ai/) to mark the images.
+
 References:
 
 https://blog.csdn.net/lanyan90/article/details/131439255
