@@ -1003,3 +1003,5 @@ https://forums.developer.nvidia.com/t/can-communication-issue/263493/31?page=2
 https://forums.developer.nvidia.com/t/jetson-orin-nx-can-candump-can0-messages-cannot-be-received-but-cansend-can-be-sent/261012/7
 
 https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/text/HR/ControllerAreaNetworkCan.html#enabling-can
+
+https://forums.developer.nvidia.com/t/can-communication-issue/263493/31?page=2
