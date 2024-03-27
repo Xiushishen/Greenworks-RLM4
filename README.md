@@ -951,10 +951,10 @@ Now, you should have the proper hardware connection. You should start registerin
 Make sure that the pinmux register settings are applied.
 ```
 sudo apt-get install busybox
-busybox devmem 0x0c303018 w 0xc458
-busybox devmem 0x0c303010 w 0xc400
-busybox devmem 0x0c303008 w 0xc458
-busybox devmem 0x0c303000 w 0xc400
+sudo busybox devmem 0x0c303018 w 0xc458
+sudo busybox devmem 0x0c303010 w 0xc400
+sudo busybox devmem 0x0c303008 w 0xc458
+sudo busybox devmem 0x0c303000 w 0xc400
 ```
 
 ### Kernel Drivers
