@@ -919,9 +919,15 @@ The software for CANbus and ROS communication can be found in this repo. It subs
 
 Please follow the [offical document](https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/text/HR/ControllerAreaNetworkCan.html#enabling-can) for detailed information. Based on my testing experiences, the following steps should be executed and should work well.
 
-Before getting started, we should be familer with the hardware layout and parameter settings of the Nvidia Orin.
-<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/can.png" width = 70% height = 50% div align=center />
+Before getting started, we should be familer with the hardware layout and parameter settings of the Nvidia Orin. The image below illustrates the 40-pin connecter which let us know which pins we have to connect to.
 
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/can.png" width = 70% height = 50% div align=center />
+We will be using the pin positions as shown below:
+
+CAN0: RX——Pin29 ；TX——Pin31
+CAN1: RX——Pin37 ；TX——Pin33
+GND: Pin 39 / 30
+VCC: Pin 17
 
 ```
 
