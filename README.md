@@ -998,7 +998,7 @@ can0 123 [4] AB CD AB CD
 
 ## ROS 1 Message to CAN
 https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/developer_kit_layout.html
-
+https://forums.developer.nvidia.com/t/can-communication-issue/263493/31?page=2
 
 https://forums.developer.nvidia.com/t/jetson-orin-nx-can-candump-can0-messages-cannot-be-received-but-cansend-can-be-sent/261012/7
 
