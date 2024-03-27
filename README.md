@@ -925,8 +925,11 @@ Before getting started, we should be familer with the hardware layout and parame
 We will be using the pin positions as shown below:
 
 CAN0: RX——Pin29 ；TX——Pin31
+
 CAN1: RX——Pin37 ；TX——Pin33
+
 GND: Pin 39 / 30
+
 VCC: Pin 17
 
 ```
