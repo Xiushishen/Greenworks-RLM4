@@ -916,3 +916,8 @@ https://blog.csdn.net/lanyan90/article/details/131411549?spm=1001.2014.3001.5502
 The software for CANbus and ROS communication can be found in this repo. It subscribes the /cmd_vel message and output the RPMs for both rear wheels. Meanwhile, it receives the CANbus message outputed from both rear wheels and converts them to ROS message of odometry.
 
 https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/developer_kit_layout.html
+
+
+https://forums.developer.nvidia.com/t/jetson-orin-nx-can-candump-can0-messages-cannot-be-received-but-cansend-can-be-sent/261012/7
+
+https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/text/HR/ControllerAreaNetworkCan.html#enabling-can
