@@ -912,7 +912,7 @@ python detect.py --weights weights/yolov7.pt --source inference/images
 2. Divide the dataset into training set, testing set, and validation set with a ratio of 0.96 : 0.02 : 0.02.
 
 3. Put the individual subdataset into one folder with one images and labels associated with it.
-<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/dataset.png" width = 40% height = 40% div align=center/>
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/dataset.png" width = 30% height = 40% div align=center/>
 
 References:
 
