@@ -848,13 +848,14 @@ Attention: Python 3.8 does not support numpy version that is over 1.24, so the s
 ```
 pip install numpy==1.19.5
 ```
-How to verify if Pytorch is successfully installed:
+How to verify if PyTorch is successfully installed and CUDA is associated with it:
 
 ```
 # From the terminal, run:
 python
 # Import PyTorch:
 >>> import torch
+>>> torch.cuda.is_available()
 ```
 If PyTorch was installed correctly, this command should execute without error. 
 
@@ -904,6 +905,7 @@ Download the weight from github, and you can test:
 ```
 python detect.py --weights weights/yolov7.pt --source inference/images 
 ```
+### Train your own model:
 
 References:
 
