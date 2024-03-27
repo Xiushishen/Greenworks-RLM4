@@ -955,9 +955,44 @@ busybox devmem 0x0c303018 w 0xc458
 busybox devmem 0x0c303010 w 0xc400
 busybox devmem 0x0c303008 w 0xc458
 busybox devmem 0x0c303000 w 0xc400
+```
+
+### Kernel Drivers
+
+Load the CAN kernel drivers.
+```
+sudo modprobe can
+sudo modprobe can_raw
+sudo modprobe mttcan
+```
+
+### Managing the Network
+
+To set the interface properties。
+```
+sudo ip link set down can0
+ip link set can0 up type can bitrate 500000 dbitrate 1000000 berr-reporting on fd on
+sudo ip link set up can0
+```
+If we have finished the setting, we are now able to test CANbus communication.
+```
+sudo apt-get install can-utils
+cansend can0 123#abcdabcd
+candump can0
+```
+### Loopback test
 
 ```
-### Kernel Drivers
+ip link set can0 type can bitrate 500000 loopback on
+ip link set can0 up
+candump can0 &
+cansend can0 123#abcdabcd
+```
+If the loopback test is successful, the last command displays this:
+```
+can0 123 [4] AB CD AB CD
+can0 123 [4] AB CD AB CD
+```
 
 
 
