@@ -917,7 +917,13 @@ The software for CANbus and ROS communication can be found in this repo. It subs
 
 ## Jetson AGX Orin CAN Communication
 
-Please follow the [offical doc](https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/text/HR/ControllerAreaNetworkCan.html#enabling-can) for detailed information.
+Please follow the [offical document](https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/text/HR/ControllerAreaNetworkCan.html#enabling-can) for detailed information. Based on my testing experiences, the following steps should be executed and should work well.
+
+```
+
+
+
+```
 
 
 
