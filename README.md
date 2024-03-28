@@ -935,6 +935,9 @@ names: ['1', '2'] # class names
   <img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/3.png" width="60%" height="40%"/>
 </div>
 
+"--data": to the yaml file we just created.
+"--epochs": depend on how complex your model is.
+"batch-size": depend on your memory.
 
 References:
 
