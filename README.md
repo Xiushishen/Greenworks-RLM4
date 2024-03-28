@@ -905,6 +905,7 @@ Download the weight from github, and you can test:
 ```
 python detect.py --weights weights/yolov7.pt --source inference/images 
 ```
+
 ### Train your own model:
 
 1. To train your model with robust dataset, you can try using the [software](https://www.makesense.ai/) to mark the images.
@@ -912,13 +913,15 @@ python detect.py --weights weights/yolov7.pt --source inference/images
 2. Divide the dataset into training set, testing set, and validation set with a ratio of 0.96 : 0.02 : 0.02.
 
 3. Put the individual subdataset into one folder with one images and labels associated with it.
+   
 <img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/dataset.png" width = 30% height = 40% div align=center/>
 
-4. Create a yaml file and put it into the data folder in this project.
+5. Create a yaml file and put it into the data folder in this project.
 
 <img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/2.png" width = 30% height = 40% div align=center/>  
+
+For my platform, the paths are shown below.
 ```
-# For my platform, the paths are shown below.
 train: /home/nvidia/perception/datasets/car_people_dataset/train/images # path to train dataset
 val: /home/nvidia/perception/datasets/car_people_dataset/valid/images # path to val dataset
 test: /home/nvidia/perception/datasets/car_people_dataset/test/images # path to test dataset
@@ -927,6 +930,7 @@ nc: 2 # Number of classes
 names: ['1', '2'] # class names
 ```
 5. We should also change the parameters in train.py to make it work.
+
 <img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/3.png" width = 30% height = 40% div align=center/>
 
 References:
