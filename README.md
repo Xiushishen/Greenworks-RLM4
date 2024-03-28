@@ -915,6 +915,8 @@ python detect.py --weights weights/yolov7.pt --source inference/images
 <img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/dataset.png" width = 30% height = 40% div align=center/>
 
 4. Create a yaml file and put it into the data folder in this project.
+
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/2.png" width = 30% height = 40% div align=center/>  
 ```
 # For my platform, the paths are shown below.
 train: /home/nvidia/perception/datasets/car_people_dataset/train/images # path to train dataset
@@ -924,6 +926,8 @@ test: /home/nvidia/perception/datasets/car_people_dataset/test/images # path to 
 nc: 2 # Number of classes
 names: ['1', '2'] # class names
 ```
+5. We should also change the parameters in train.py to make it work.
+<img src="https://github.com/Xiushishen/Greenworks-RLM4/blob/main/support_files/3.png" width = 30% height = 40% div align=center/>
 
 References:
 
