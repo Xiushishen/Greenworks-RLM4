@@ -936,7 +936,9 @@ names: ['1', '2'] # class names
 </div>
 
 "--data": to the yaml file we just created.
+
 "--epochs": depend on how complex your model is.
+
 "batch-size": depend on your memory.
 
 References:
