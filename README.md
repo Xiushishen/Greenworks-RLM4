@@ -1021,15 +1021,18 @@ candump can0
 ### Loopback test
 
 ```
-ip link set can0 type can bitrate 500000 loopback on
-ip link set can0 up
-candump can0 &
-cansend can0 123#abcdabcd
+sudo ip link set can0 type can bitrate 1000000 loopback on
+sudo ip link set up can0
+# In the first terminal
+candump can0
+# Open a new terminal
+cansend can0 5A1#1122334455667799
 ```
 If the loopback test is successful, the last command displays this:
 ```
-can0 123 [4] AB CD AB CD
-can0 123 [4] AB CD AB CD
+can0  5A1   [8]  11 22 33 44 55 66 77 99
+can0  5A1   [8]  11 22 33 44 55 66 77 99
+
 ```
 
 
