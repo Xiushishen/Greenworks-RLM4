@@ -1032,7 +1032,6 @@ If the loopback test is successful, the last command displays this:
 ```
 can0  5A1   [8]  11 22 33 44 55 66 77 99
 can0  5A1   [8]  11 22 33 44 55 66 77 99
-
 ```
 
 
