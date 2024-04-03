@@ -1009,7 +1009,7 @@ sudo modprobe mttcan
 To set the interface properties。
 ```
 sudo ip link set down can0
-ip link set can0 up type can bitrate 500000 dbitrate 1000000 berr-reporting on fd on
+sudo ip link set can0 up type can bitrate 500000 dbitrate 1000000 berr-reporting on fd on
 sudo ip link set up can0
 ```
 If we have finished the setting, we are now able to test CANbus communication.
