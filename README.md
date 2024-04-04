@@ -988,9 +988,14 @@ Now, you should have the proper hardware connection. You should start registerin
 
 Make sure that the pinmux register settings are applied.
 ```
+# Install busybox if you don't have
 sudo apt-get install busybox
+
+# Specify CAN0 port
 sudo busybox devmem 0x0c303018 w 0xc458
 sudo busybox devmem 0x0c303010 w 0xc400
+
+# Specify CAN1 port
 sudo busybox devmem 0x0c303008 w 0xc458
 sudo busybox devmem 0x0c303000 w 0xc400
 ```
@@ -1009,7 +1014,7 @@ sudo modprobe mttcan
 To set the interface properties。
 ```
 sudo ip link set down can0
-sudo ip link set can0 up type can bitrate 500000 dbitrate 1000000 berr-reporting on fd on
+sudo ip link set can0 up type can bitrate 250000 dbitrate 250000 berr-reporting on fd on
 sudo ip link set up can0
 ```
 If we have finished the setting, we are now able to test CANbus communication.
