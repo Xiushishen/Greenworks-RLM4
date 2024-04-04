@@ -1023,7 +1023,7 @@ sudo apt-get install can-utils
 cansend can0 123#abcdabcd
 candump can0
 ```
-### Loopback test
+### Loopback Test
 
 ```
 sudo ip link set can0 type can bitrate 1000000 loopback on
@@ -1038,15 +1038,6 @@ If the loopback test is successful, the last command displays this:
 can0  5A1   [8]  11 22 33 44 55 66 77 99
 can0  5A1   [8]  11 22 33 44 55 66 77 99
 ```
-
-
-
 ## ROS 1 Message to CAN
-https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/developer_kit_layout.html
-https://forums.developer.nvidia.com/t/can-communication-issue/263493/31?page=2
 
-https://forums.developer.nvidia.com/t/jetson-orin-nx-can-candump-can0-messages-cannot-be-received-but-cansend-can-be-sent/261012/7
-
-https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/text/HR/ControllerAreaNetworkCan.html#enabling-can
-
-https://forums.developer.nvidia.com/t/can-communication-issue/263493/31?page=2
+Please run the path_planning package to publish sample /cam_vel message and and run ROS_CAN communication node to convert ROS message to CAN message.
