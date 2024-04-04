@@ -982,7 +982,11 @@ Transceiver VCC to Jetson 3.3V pin
 
 Transceiver GND to Jetson GND pin
 
+After transceiver and Jetson Orin are connected, please connect the ETO cable to the transceiver with CAN_H port to red line and CAN_L to gray line. 
+
 Now, you should have the proper hardware connection. You should start registering the settings.
+
+Greenworks has the LCUSV-131A analyzer which checks every CAN message inputed or outputed from the mower.
 
 ### Pinmux
 
