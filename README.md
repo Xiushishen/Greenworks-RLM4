@@ -1,7 +1,7 @@
 # Greenworks-RLM4
 This repository illustrates the steps needed to set up the environment on NVIDIA AGX Orin for robotic mower development.
 # 1. Prerequisites  
-The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with the OpenCV verison of 4.6.0. It is strongly recommended to put all the **Dependencies** and **SDKs** into one specific folder to mak the environment neat.
+The essential software environment is based on Ubuntu 20.04. We have tested all the repositories on Ubuntu 20.04 with the OpenCV verison of 4.6.0. It is strongly recommended to put all the **Dependencies** and **SDKs** into one specific folder to make the environment neat.
 
 ## Basic libraries
 
