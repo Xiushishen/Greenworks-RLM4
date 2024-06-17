@@ -1051,5 +1051,14 @@ can0  5A1   [8]  11 22 33 44 55 66 77 99
 
 Here is the developed [repo](https://bitbucket.org/greenworks-optimus/can_ros1/src/main/) for ROS 1 and CANbus interaction
 
+To receive CAN message from the mower and transform ROS message to CAN message:
+```
+roslaunch can_ros1_driver can_control.launch
+```
+To collect data from GPS, IMU, and Wheel Encoder, please run:
+```
+roslaunch can_ros1_driver optimus.launch
+```
+
 Please run the path_planning package to publish sample /cam_vel message and and run ROS_CAN communication node to convert ROS message to CAN message.
 
