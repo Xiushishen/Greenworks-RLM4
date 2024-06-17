@@ -951,7 +951,7 @@ https://blog.csdn.net/lanyan90/article/details/131411549?spm=1001.2014.3001.5502
 
 ## SSD.Pytorch
 
-## Mast-RCNN
+## Mask-RCNN
 
 ## Faster-RCNN
 
