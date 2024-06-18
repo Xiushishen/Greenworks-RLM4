@@ -492,6 +492,14 @@ pcd_save:
 
 R3LIVE is not supported on NVIDIA AGX Orin.
 
+## robot_localization
+
+robot_localization is a collection of state estimation nodes, each of which is an implementation of a nonlinear state estimator for robots moving in 3D space. It contains two state estimation nodes, ekf_localization_node and ukf_localization_node. In addition, robot_localization provides navsat_transform_node, which aids in the integration of GPS data.
+
+https://www.guyuehome.com/7701
+
+
+
 ## robot_pose_ekf
 
 EKF based robotic mower localization via IMU, GPS, odom and VIO (VINS-FUSION).
